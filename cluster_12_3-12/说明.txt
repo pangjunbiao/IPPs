@@ -1,0 +1,6 @@
+anjing_data_3:
+聚类结果及聚类在地图上的显示
+result matrix：
+形成的I矩阵和R矩阵
+start_time：
+每个聚类的出发时间
