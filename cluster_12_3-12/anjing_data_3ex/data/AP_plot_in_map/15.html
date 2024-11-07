@@ -1,0 +1,884 @@
+
+    <!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+		#allmap {height:100%; width: 100%;}
+		#control{width:100%;}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=UR3GrTe3e547riPGPWbRSQRT"></script>
+	<title>设置线、面可编辑</title>
+</head>
+<body>
+	<div id="allmap"></div>
+	<div id="control">
+		<button onclick = "polyline.enableEditing();polygon.enableEditing();">开启线、面编辑功能</button>
+		<button onclick = "polyline.disableEditing();polygon.disableEditing();">关闭线、面编辑功能</button>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var map = new BMap.Map("allmap");
+	map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+	map.enableScrollWheelZoom();
+
+    
+var point = new BMap.Point(116.3169085,39.910906000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168525,39.913856);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3167305,39.914926);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3167785,39.916601);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168635,39.911061000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169405,39.916966);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3171135,39.911421000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168885,39.910686000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168605,39.916793000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168305,39.918468000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168835,39.916788000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169535,39.911751);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169085,39.914216);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169285,39.91528);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169035,39.910636000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168585,39.912098);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168955,39.916588000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169005,39.911506);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168435,39.915183);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168485,39.910228000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168835,39.917013000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168185,39.919561);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168135,39.914841);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168605,39.917611);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168685,39.916026);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168435,39.916881000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168785,39.915151);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3167585,39.910416000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168885,39.917936000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169685,39.909451000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168455,39.913281000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168305,39.916011000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168505,39.918178000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169755,39.915026000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3171755,39.909326);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168985,39.911001000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168935,39.912376);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169005,39.914288);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168685,39.918858);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168735,39.914426000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168835,39.918291);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.31691550000001,39.912886);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168185,39.915593);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169835,39.914961000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169185,39.919116);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168605,39.916083);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169655,39.910291);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169335,39.911701);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169305,39.913326000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.31682550000001,39.919121000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169185,39.910486000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3167785,39.915871);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168525,39.911431);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169035,39.917158);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168735,39.918393);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169285,39.912341000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168685,39.917406);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3167885,39.917586);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168335,39.917376000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3165935,39.912001000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169385,39.914268);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3170325,39.915796);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3170255,39.917391);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169935,39.910186);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169485,39.910546000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168755,39.917946);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169055,39.910016000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169135,39.912906);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169555,39.919691);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169885,39.915281);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.31691550000001,39.918251000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169705,39.911486000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3173535,39.915671);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3173705,39.918146);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169335,39.914321);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168985,39.913018);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169805,39.911053);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169285,39.915631000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169335,39.916071);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169635,39.911966);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169255,39.915956);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3171435,39.916621);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.31691550000001,39.914451);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168385,39.911326);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168785,39.917361);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169185,39.914058000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169255,39.913201);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169455,39.914891000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169105,39.917423);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169085,39.916448);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169335,39.910831);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169955,39.916013);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168385,39.916548000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168605,39.914438000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168785,39.915088000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168555,39.918106);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3170035,39.909546000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168785,39.916553);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169435,39.915455);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168835,39.918158000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3167985,39.916658000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168805,39.916481000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168855,39.917656);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168585,39.910121000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168035,39.911053);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168635,39.914851000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3166455,39.917591);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.31687050000001,39.916411000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169685,39.915601);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.31691550000001,39.916623);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3166885,39.910716);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3166905,39.914803);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169035,39.910153);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3170005,39.915751);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168525,39.918481);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169255,39.916136);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169235,39.918376);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169885,39.915238);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169135,39.912606000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169555,39.915963000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169135,39.916343000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168505,39.916783);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3167485,39.917731);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168285,39.916446);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168385,39.914388);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168525,39.915271000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168405,39.917761000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169205,39.915901000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169705,39.911303000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.31696050000001,39.910478000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169105,39.917371);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3170435,39.909511);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169025,39.918931);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169885,39.917606);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168585,39.914855);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3170035,39.911176000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169805,39.909911);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169635,39.915751);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169805,39.913736);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169435,39.918681);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169635,39.917458);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169025,39.910351000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168435,39.913941);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168655,39.917043);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168935,39.910766);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3170385,39.910446);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169935,39.912503);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169085,39.915181000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169355,39.917851000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168285,39.915671);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168335,39.917286000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.31691550000001,39.910783);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3167555,39.916736);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169235,39.913906000000004);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168635,39.915878);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168055,39.917766);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168805,39.915543);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169955,39.912346);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168525,39.912811000000005);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168805,39.915678);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3167785,39.913598);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168935,39.911523);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3168535,39.916291);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169185,39.914346);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169185,39.916676);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169135,39.91669);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169405,39.910911000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169735,39.915731);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169585,39.918383000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3169135,39.916403);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+var point = new BMap.Point(116.3170255,39.915656000000006);
+var circle = new BMap.Circle(point,100,
+{strokeColor:"red",fillColor:"red",strokeOpacity:0.5,fillOpacity:0.5});
+map.addOverlay(circle);
+
+</script>
